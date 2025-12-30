@@ -9,7 +9,7 @@ export default function HeaderAnimation() {
         loop
         playsInline
       >
-        <source src="/animations/planet-earth-animation.mp4" type="video/mp4" />
+        <source src="https://i2aykuauc0br6evm.public.blob.vercel-storage.com/planet-earth-animation.mp4" type="video/mp4" />
       </video>
       <div className={styles.overlayText}>
         <div>SYSTEMS RESEARCH</div>
