@@ -1,0 +1,27 @@
+.container {
+  max-width: 1000px;
+  margin: 120px auto;
+  padding: 0 32px;
+}
+
+.title {
+  font-size: 28px;
+  letter-spacing: 0.25em;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.key {
+  background: #000;
+  color: #f2f1eb;
+  padding: 32px;
+  border: 1px solid rgba(242, 241, 235, 0.3);
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+
+  white-space: pre;
+  overflow-x: auto;
+}

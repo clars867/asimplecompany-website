@@ -1,0 +1,72 @@
+.footer {
+  border-top: 1px solid rgba(242, 241, 235, 0.3);
+  margin-top: 160px;
+}
+
+.footerInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 320px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(242, 241, 235, 0.3);
+}
+
+.brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  letter-spacing: 0.25em;
+  color: #f2f1eb;
+}
+
+.right {
+  padding: 60px;
+}
+
+.heading {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  margin-bottom: 32px;
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px 60px;
+}
+
+.linksGrid a {
+  text-decoration: none;
+  color: #f2f1eb;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+}
+
+.linksGrid a:hover {
+  opacity: 0.7;
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(242, 241, 235, 0.3);
+}
+
+.bottomBar a {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: #f2f1eb;
+  text-decoration: none;
+}
+
+.bottomBar a:hover {
+  opacity: 0.7;
+}

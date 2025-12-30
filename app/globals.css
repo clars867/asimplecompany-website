@@ -1,0 +1,42 @@
+/* --- Custom Theme Variables --- */
+:root {
+  --color-bg-primary: #0B0B0E;
+  --color-text-primary: #F2F1EB;
+  color-scheme: dark;
+}
+
+/* --- Global Resets --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-lato), "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100%;
+}
+
+/* Remove layout overrides that break Tailwind */
+/* DO NOT force body into flex container */
+body {
+  line-height: 1.6;
+}
+
+/* Keep hyperlinks clean */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Normalize headings & paragraphs */
+h1, h2, h3, h4, p {
+  margin: 0;
+}

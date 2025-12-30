@@ -1,0 +1,47 @@
+.headerAnimation {
+  width: min(100, 1400px);
+  height: 1100px; /* tweak to taste */
+  margin: 0 auto;
+  overflow: hidden;
+  background: black;
+  position: relative;
+}
+
+.headerAnimation video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlayText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f2f1eb;
+  letter-spacing: 0.18em;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.1;
+  z-index: 1;
+  pointer-events: none;
+  text-transform: uppercase;
+ text-shadow:
+  /* Dark outline (contrast edge) */
+  0 0 2px rgba(0, 0, 0, 0.99),
+  0 0 6px rgba(0, 0, 0, 0.8),
+
+  /* Light glow (halo) */
+  0 0 25px rgba(255, 255, 255, 0.777),
+  0 0 30px rgba(255, 255, 255, 0.755),
+  0 0 60px rgba(255, 255, 255, 0.699);
+}
+
+.overlayAmpersand {
+  letter-spacing: 0.05em;
+  margin: 6px 0;
+}

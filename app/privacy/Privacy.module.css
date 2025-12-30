@@ -1,0 +1,22 @@
+.container {
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 0 32px;
+}
+
+.title {
+  font-size: 36px;
+  letter-spacing: 0.2em;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+}
+
+.content {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(242, 241, 235, 0.85);
+}
+
+.content p {
+  margin-bottom: 24px;
+}
