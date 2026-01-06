@@ -2,10 +2,9 @@ import "./globals.css";
 import { Lato } from "next/font/google";
 import NavBar from "../components/NavBar/NavBar";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
-import NoticeBubble from "../components/NoticeBubble";
 import Footer from "../components/Footer";
 import Script from "next/script";
-
+import FloatingControls from "../components/FloatingControls/FloatingControls";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -42,8 +41,20 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+
+            // Default: deny analytics until user consent
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              functionality_storage: 'denied',
+              personalization_storage: 'denied',
+              security_storage: 'granted',
+            });
+
             gtag('js', new Date());
+
             gtag('config', 'G-REW2WYW95H', {
+              anonymize_ip: true,
               page_path: window.location.pathname,
             });
           `}
@@ -52,9 +63,9 @@ export default function RootLayout({
       <body className="bg-background text-foreground font-sans">
         <NavBar />
         <SocialLinks />
-        <NoticeBubble />
         {children}
       <Footer />
+      <FloatingControls />
       </body>
     </html>
   );

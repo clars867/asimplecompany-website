@@ -1,0 +1,75 @@
+.panel {
+  position: absolute;
+  left: calc(100% + 12px); /* sit to the right of the cookie icon */
+  top: 0;
+
+  width: 280px;
+  padding: 1rem;
+
+  background: #0c0d14;
+  border: 1px solid rgba(242, 241, 235, 0.25);
+  border-radius: 8px;
+
+  font-size: 0.85rem;
+  line-height: 1.4;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  z-index: 1002;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+
+  background: transparent;
+  color: #f2f1eb;
+  border: 1px solid rgba(242, 241, 235, 0.35);
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.actions button:hover {
+  background-color: rgba(242, 241, 235, 0.08);
+  border-color: rgba(242, 241, 235, 0.6);
+}
+.privacyLink {
+  font-weight: 600;
+  text-decoration: underline;
+  color: inherit;
+  text-underline-offset: 2px;
+}
+
+.privacyLink:hover {
+  opacity: 0.85;
+}
+
+.privacyLink:focus-visible {
+  outline: 2px solid rgba(242, 241, 235, 0.5);
+  outline-offset: 2px;
+}
+
+.title {
+  letter-spacing: 0.02em;
+}
+
+.text {
+  max-width: 36ch;
+}

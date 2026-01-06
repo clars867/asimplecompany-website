@@ -22,7 +22,14 @@ export default function PrivacyPage() {
 
         <h2>1. When You Visit the Site</h2>
         <p>
-          We respect your privacy and do not collect any data from visitors who view this site. You can explore our content without the need to provide any personal information.
+          We respect your privacy and do not collect any data from site visitors by default. This setting is only enabled when you click "Accept" on the cookie notice. We use Google Analytics, a web analytics service provided by Google LLC. Google's use of data collected from sites that use its service is described here: <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.externalLink}
+          >
+            https://policies.google.com/privacy
+          </a>.
         </p>
 
         <h2>2. When You Submit a "Contact" Form</h2>

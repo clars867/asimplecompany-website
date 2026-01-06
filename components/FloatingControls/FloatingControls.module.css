@@ -1,0 +1,21 @@
+/* Anchors the floating controls as a single group */
+.wrapper {
+  position: fixed;
+  left: 30px;            /* aligns with your existing NoticeBubble offset */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+
+  pointer-events: none; /* let children opt-in to interaction */
+}
+
+/* Vertical stack for independent controls */
+.stack {
+  position: relative;      /* anchor for CookiePanel absolute positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;             /* space between ? and cookie */
+
+  pointer-events: auto; /* re-enable interaction for children */
+}

@@ -1,12 +1,28 @@
-/* Floating wrapper anchored to the viewport */
-.wrapper {
-  position: fixed;
-  left: 40px;        /* distance from left edge */
-  top: 45%;          /* vertical position over the planet */
-  z-index: 20;
+/* Circular question-mark button */
+.iconButton {
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-/* Circular question-mark button */
+.iconButton:hover {
+  background-color: rgba(242, 241, 235, 0.08);
+  transform: scale(1.05);
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid rgba(242, 241, 235, 0.4);
+  outline-offset: 2px;
+}
+
 .icon {
   width: 42px;
   height: 42px;
@@ -23,11 +39,6 @@
 
   backdrop-filter: blur(6px);
   transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.icon:hover {
-  border-color: rgba(242, 241, 235, 0.7);
-  background: rgba(0, 0, 0, 0.7);
 }
 
 /* Expanded message panel */

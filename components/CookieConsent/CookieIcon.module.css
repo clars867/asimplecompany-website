@@ -1,0 +1,48 @@
+.iconButton {
+  background: transparent;
+  border: 1px solid currentColor;
+  padding: 0.25rem;
+  cursor: pointer;
+  opacity: 0.9;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.iconButton:hover {
+  background-color: rgba(242, 241, 235, 0.08);
+  transform: scale(1.05);
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid rgba(242, 241, 235, 0.4);
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(242, 241, 235, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  color: #f2f1eb;
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1;
+  text-align: center;
+
+  backdrop-filter: blur(6px);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.icon .material-symbols-outlined {
+  display: block;
+  line-height: 1;
+}
