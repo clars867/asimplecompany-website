@@ -1,0 +1,61 @@
+.socialBar {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+
+  /* CRITICAL: isolate from NavBar background */
+  background-color: black; /* match page background */
+  position: relative;
+  z-index: 10;
+}
+
+.socialContainer {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  padding: 0.5rem 2rem 0.5rem 3rem;
+}
+
+.socialRow {
+  display: flex;
+  align-items: center; /* vertical centering */
+  gap: 1.25rem;
+  background-color: black;
+}
+
+.socialLabel {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(242, 241, 235, 0.6);
+  white-space: nowrap;
+  border-right: 1px solid rgba(242, 241, 235, 0.25);
+  padding-right: 15px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.socialLinks a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: rgba(242, 241, 235, 0.75);
+  text-decoration: none;
+}
+
+.socialLinks a:hover {
+  color: #f2f1eb;
+}
+
+.linkText {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

@@ -18,7 +18,7 @@ export default function UnderConstructionPage() {
         We’re actively building this section of the site.
       </p>
       <p className={styles.meta}>
-        Last updated: December 30, 2025
+        Last updated: January 5, 2026
       </p>
     </main>
   );

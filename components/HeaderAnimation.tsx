@@ -4,12 +4,16 @@ export default function HeaderAnimation() {
   return (
     <div className={styles.headerAnimation}>
       <video
+        className={styles.video}
         autoPlay
         muted
         loop
         playsInline
+        preload="metadata"
+        poster="/animations/globe-poster.jpg"
       >
-        <source src="https://i2aykuauc0br6evm.public.blob.vercel-storage.com/planet-earth-animation.mp4" type="video/mp4" />
+        <source src="/animations/globe.mp4" type="video/mp4" />
+        Your browser does not support the HTML5 video tag.
       </video>
       <div className={styles.overlayText}>
         <div>SYSTEMS RESEARCH</div>
