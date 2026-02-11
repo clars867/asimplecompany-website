@@ -116,9 +116,6 @@ export default function HomePage() {
             {item.href ? <a href={item.href}>{item.title}</a> : item.title}
           </h3>
 
-          <p style={{ marginTop: "4px", fontSize: "13px", color: "#475569" }}>
-            {item.summary}
-          </p>
         </article>
       ))}
     </div>
