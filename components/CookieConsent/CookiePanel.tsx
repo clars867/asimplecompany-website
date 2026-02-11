@@ -25,11 +25,15 @@ export default function CookiePanel({ open, onClose }: CookiePanelProps) {
     document.head.appendChild(script);
 
     (window as any).dataLayer = (window as any).dataLayer || [];
-    function gtag(){(window as any).dataLayer.push(arguments);}
+
+    const gtag = (...args: any[]) => {
+      (window as any).dataLayer.push(args);
+    };
+
     (window as any).gtag = gtag;
 
     gtag("js", new Date());
-    gtag("config", "G-XXXXXXXXXX"); // ← replace with your GA ID
+    gtag("config", "G-REW2WYW95H");
 
     (window as any).__analyticsLoaded = true;
   };
