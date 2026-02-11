@@ -14,10 +14,35 @@ interface CookiePanelProps {
 export default function CookiePanel({ open, onClose }: CookiePanelProps) {
   const [consent, setConsent] = useState<CookieConsentState>("unknown");
 
+  const loadAnalytics = () => {
+    if (typeof window === "undefined") return;
+
+    if ((window as any).__analyticsLoaded) return;
+
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-REW2WYW95H";
+    script.async = true;
+    document.head.appendChild(script);
+
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    function gtag(){(window as any).dataLayer.push(arguments);}
+    (window as any).gtag = gtag;
+
+    gtag("js", new Date());
+    gtag("config", "G-XXXXXXXXXX"); // ← replace with your GA ID
+
+    (window as any).__analyticsLoaded = true;
+  };
+
   useEffect(() => {
     const stored = localStorage.getItem("cookie-consent");
+
     if (stored === "accepted" || stored === "declined") {
       setConsent(stored);
+    }
+
+    if (stored === "accepted") {
+      loadAnalytics();
     }
   }, []);
 
@@ -26,6 +51,8 @@ export default function CookiePanel({ open, onClose }: CookiePanelProps) {
 
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "accepted");
+
+    loadAnalytics();
 
     window.gtag?.("consent", "update", {
       analytics_storage: "granted",

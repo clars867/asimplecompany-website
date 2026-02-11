@@ -17,7 +17,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "A Simple Company",
-  description: "A minimal landing experience built with Next.js and Tailwind CSS.",
+  description: "Premier systems research and development firm.",
 };
 
 export default function RootLayout({

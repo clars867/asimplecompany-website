@@ -20,7 +20,7 @@ export default function Footer() {
             <Link href="/testimonials">TESTIMONIALS</Link>
             <Link href="/projects">PROJECTS</Link>
             <Link href="/about">ABOUT US</Link>
-            <Link href="/referral-network">REFERRAL NETWORK</Link>
+            <Link href="/get-connected/referral-network">REFERRAL NETWORK</Link>
             <Link href="https://github.com" target="_blank">
               GITHUB
             </Link>

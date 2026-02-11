@@ -49,7 +49,7 @@ const links = [
     href: "/knowledge-center", 
     label: "KNOWLEDGE CENTER",
     children: [
-      { href: "/knowledge-center/software-tools", label: "SOFTWARE CATALOG" },
+      { href: "/knowledge-center/software-catalog", label: "SOFTWARE CATALOG" },
       { href: "/knowledge-center/codes-standards", label: "CODES & STANDARDS" },
       { href: "/knowledge-center/government-resources", label: "GOVERNMENT RESOURCES" },
     ],
